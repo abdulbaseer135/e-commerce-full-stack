@@ -1,0 +1,124 @@
+.cart {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  max-width: 1200px;  /* Ensures the cart doesn't stretch too wide on large screens */
+  margin: 0 auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;  /* Adds a line between cart items */
+  padding-bottom: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.cart-item h3 {
+  flex: 1;
+}
+
+.cart-item button {
+  padding: 6px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #555;  /* Changes color when hovering */
+}
+
+/* Cart Total Section */
+.cart-total {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 1024px) {
+  .cart-item {
+    flex-direction: column;  /* Stack the cart item vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 60px;  /* Increase image size slightly on tablets */
+    margin-bottom: 10px;  /* Space out the image from the text */
+  }
+
+  .cart-item h3 {
+    font-size: 1.1rem;  /* Make the product name a bit smaller */
+  }
+
+  .cart-item button {
+    width: 100%;  /* Full-width button on tablets */
+    padding: 8px;
+  }
+
+  .cart-total {
+    font-size: 1.1rem;  /* Make the total text a bit smaller */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;  /* Stack cart items for better mobile experience */
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .cart-item img {
+    width: 70px;  /* Larger image on mobile */
+    margin-bottom: 15px;
+  }
+
+  .cart-item h3 {
+    font-size: 1rem;  /* Smaller font size for mobile */
+  }
+
+  .cart-item button {
+    width: 100%;  /* Full-width button on mobile */
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .cart-total {
+    font-size: 1rem;  /* Adjust the total size for smaller devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cart {
+    padding: 15px;  /* Reduced padding on very small screens */
+  }
+
+  .cart-item img {
+    width: 80px;  /* Larger image on very small screens */
+    margin-bottom: 15px;
+  }
+
+  .cart-item h3 {
+    font-size: 0.9rem;  /* Further reduce the product name font size */
+  }
+
+  .cart-item button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;  /* Adjust button size for mobile */
+  }
+
+  .cart-total {
+    font-size: 1rem;  /* Slightly smaller total font */
+  }
+}

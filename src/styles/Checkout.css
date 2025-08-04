@@ -1,0 +1,57 @@
+
+.checkout {
+  padding: 20px;
+}
+
+.checkout form div {
+  margin-bottom: 10px;
+}
+
+.checkout input {
+  padding: 5px;
+  width: 100%;
+}
+
+.checkout button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background-color: #555;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .checkout {
+    padding: 10px;
+  }
+
+  .checkout form {
+    width: 100%;
+  }
+
+  .checkout input {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .checkout button {
+    padding: 12px 25px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .checkout input {
+    padding: 10px;
+  }
+
+  .checkout button {
+    width: 100%;
+    font-size: 18px;
+  }
+}

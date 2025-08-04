@@ -1,0 +1,155 @@
+.footer {
+  background: #222;
+  color: #eee;
+  padding: 40px 0 0 0;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  padding: 0 4vw;
+  gap: 32px;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 200px;
+  margin-bottom: 24px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #f1c40f;
+  margin-bottom: 14px;
+}
+
+.footer-section.about p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section.links li {
+  margin-bottom: 8px;
+}
+
+.footer-section.links a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section.links a:hover {
+  color: #f1c40f;
+}
+
+.footer-section.contact p {
+  margin: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ccc;
+}
+
+.footer-social {
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a {
+  color: #eee;
+  font-size: 22px;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: #f1c40f;
+}
+
+.footer-section.newsletter form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.footer-section.newsletter input[type="email"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  width: 140px;
+}
+
+.footer-section.newsletter button {
+  background: #f1c40f;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.footer-section.newsletter button:hover {
+  background: #fff;
+  color: #222;
+}
+
+.newsletter-note {
+  color: #bbb;
+  font-size: 0.95em;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding: 18px 4vw;
+  text-align: center;
+  color: #bbb;
+  font-size: 15px;
+  background: #1a1a1a;
+}
+
+.footer-policy-links {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-policy-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-policy-links a:hover {
+  color: #f1c40f;
+}
+
+.footer-policy-links span {
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 2vw;
+  }
+  .footer-section {
+    min-width: 0;
+  }
+}
